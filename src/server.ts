@@ -18,8 +18,8 @@ async function boostrap() {
     server = app.listen(config.port, () => {
       logger.info(`Application is listening on port ${config.port}`);
     });
-  } catch (err) {
-    errorLogger.error('Failed to connect database', err);
+  } catch (error) {
+    errorLogger.error('Failed to connect database', error);
   }
 
   //gracefull error
