@@ -67,8 +67,6 @@ const getAllSemesters = async (
       page,
       limit,
       total,
-      sortBy,
-      sortOrder,
     },
     data: result,
   };
